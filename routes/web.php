@@ -23,6 +23,6 @@ Route::get('/', function () {
 
 Route:: get('/post', function (){
         return view ('post', [
-            'post' => '<h1>Hello gyes</h1>' // $post
+            'post' => file_get_contents(__DIR__ . '/../resources/posts/my-first-post.html') //this easy way to call routes to view it
         ]);
 });
