@@ -23,7 +23,18 @@ Route::get('/', function () {
 
 Route:: get('/posts/{post}', function ($slug){
 
-    $post = file_get_contents(__DIR__ . "/../resources/posts/{$slug}.html");
+    $path = __DIR__ . "/../resources/posts/{$slug}.html";
+
+    if (! file_exists($path)){
+//        return redirect('/');
+//        dd('file does not exist'); // day dump // kill execution
+//        ddd('sorry! wrong way'); // same before but with UI
+
+        abort(404);
+    }
+
+    $post = file_get_contents($path);
+
     return view ('post', [
             'post' => $post //this easy way to call routes to view it
         ]);
