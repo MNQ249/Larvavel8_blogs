@@ -6,12 +6,6 @@
         <link rel="stylesheet" href="test.css">
         <script src="test.js"></script>
         <title>My Blog</title>
-
-        <!-- Fonts -->
-
-
-        <!-- Styles -->
-
     </head>
     <body>
             <h1>You and I</h1>

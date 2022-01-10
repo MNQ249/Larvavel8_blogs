@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="test.css">
     <script src="test.js"></script>
-    <title>Third Post</title>
+    <title>my Post</title>
 </head>
 <body>
 <article>

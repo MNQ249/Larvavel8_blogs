@@ -21,8 +21,10 @@ Route::get('/', function () {
 });
 
 
-Route:: get('/post', function (){
-        return view ('post', [
-            'post' => file_get_contents(__DIR__ . '/../resources/posts/my-first-post.html') //this easy way to call routes to view it
+Route:: get('/posts/{post}', function ($slug){
+
+    $post = file_get_contents(__DIR__ . "/../resources/posts/{$slug}.html");
+    return view ('post', [
+            'post' => $post //this easy way to call routes to view it
         ]);
 });
