@@ -21,6 +21,8 @@ Route::get('/', function () {
 });
 
 
-Route:: get('/th_post', function (){
-        return view ('th_post');
+Route:: get('/post', function (){
+        return view ('post', [
+            'post' => '<h1>Hello gyes</h1>' // $post
+        ]);
 });
